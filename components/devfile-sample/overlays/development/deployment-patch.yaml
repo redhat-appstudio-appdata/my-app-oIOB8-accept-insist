@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mleonova-tenant/my-app/devfile-sample@sha256:2f09226ebdce6ab3875e5f3f09a5a5db4e906fdb44315233b98d3ed0342f07c7
+        name: my-nodejs
+        resources: {}
+status: {}
